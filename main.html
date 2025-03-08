@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Noé Berges</title>
+    <link rel="stylesheet" href="style_main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <main>
+        <section class="presentation">
+            <div class="presentation_text">
+                <h1>Bonjour, <br> je suis Noé Berges</h1>
+                <p>Et bienvenue sur mon site web</p>
+            </div>
+            <div class="character_container">
+                <img src="images/3D_character.png">
+            </div>
+        </section>
+
+        <section class="choice">
+            <button onclick="games()">Mes Jeux</button>
+            <button onclick="modelisation()">Modélisation 3D</button>
+        </section>
+
+        <section id="jeux-videos">
+            <div class="frenchdev">
+                <h1>Découvrez mes jeux sur ma page </h1>
+                <a href="https://french-dev.itch.io/" target="_blank"><img src="images/french_dev.png"></a>
+            </div>
+
+            <div class="games_container">
+                <div class="game" id="hellvolution">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jaB6YKi_Y0U?si=KRVC6q7sj7UzXQyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="game_presetation">
+                        <a href="https://french-dev.itch.io/hellvolution" target="_blank"><img src="images/hellvolution_title.png"></a>
+                        <p>HELLvolution est un jeu créé en 4 jours lors d'une <em>game jam</em> organisé par <em>GMTK</em> en 2024</p>
+                    </div>
+                </div>
+                <div class="game" id="lifetrap">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RqfQ_ef1ALs?si=Kawvrb62FlyGQzxu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="game_presetation"></a>
+                        <a href="https://french-dev.itch.io/lifetrap" target="_blank"><img src="images/life_trap_title.gif"></a>
+                        <p>Lifetrap est un jeu créé en 2 jours lors d'une <em>game jam</em> organisé par <em>GMTK</em> en 2023</p>
+                    </div>
+                </div>
+                <div class="game" id="two_worlds">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VUbkM8ugK9I?si=UPq-p8XKvGgQd6MW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="game_presetation"></a>
+                        <a href="https://french-dev.itch.io/two-worlds" target="_blank"><img src="images/two_worlds_title.png"></a>
+                        <p>Two Worlds est un jeu créé en 3 jours lors d'une <em>game jam</em> organisé par <em>Jonas</em> en 2022</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="modelisation">
+            <h1>3D</h1>
+        </section>
+    </main>
+</body>
+
+<script>
+    function games() {
+        document.getElementById("jeux-videos").style.display = "block";
+        document.getElementById("modelisation").style.display = "none";
+    }
+
+    function modelisation() {
+        document.getElementById("jeux-videos").style.display = "none";
+        document.getElementById("modelisation").style.display = "block";
+    }
+</script>
+
+</html>

@@ -1,0 +1,210 @@
+body{
+    background: #161616; 
+
+    padding: 0;
+    margin: 0;
+
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.presentation{
+    background: #161616; 
+    width: 100%;
+
+    padding-top: 3vw;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    align-items: center;
+}
+
+.presentation_text{
+    width: 45%;
+
+    font-size:2.5vw;
+
+    padding-left: 20px;
+    padding-right: 0px;
+
+    box-shadow: 2px 2px 0vw 0vw #daeaff;
+}
+
+.character_container img{
+    height: 35vw;
+    background: linear-gradient(120deg, #000046, #1cb5e0);
+    box-shadow: 1.5vw 0.75vw 0vw 0vw #daeaff;
+    border-radius: 15% 85% 50% 50% / 50% 50% 50% 50%;
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+
+    width: 100%;
+    height: 8vw;
+
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.choice button{
+    height: 6vw;
+    width: 20vw;
+
+    border-radius: 3vw;
+    background-color: transparent;
+    border: 3px solid white;
+
+    color: white;
+    font-size: 2vw;
+
+    box-shadow: 0px 0px 1.5vw 0vw #1d5399;
+}
+
+.choice button:hover{
+    color: #161616;
+    background-color: white;
+    transition: 0.25s;
+}
+
+#modelisation{
+    display: none;
+}
+
+.frenchdev{
+    font-size: 1.7vw;
+
+    margin-bottom: 2vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frenchdev img{
+    height: 10vw;
+    padding-left: 1vw;
+}
+
+.games_container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4vw;
+
+    margin-bottom: 5vw;
+}
+
+.game{
+    width: 80%;
+    height: 16.875vw;
+
+    display: flex;
+    gap: 3px;
+    justify-content:center;
+
+    background-color: white;
+
+    border-radius: 0vw 2vw 0vw 0vw;
+    box-shadow: 0px 0px 1.5vw 0vw #1d5399;
+    outline: 3px solid white;
+
+    overflow: hidden;
+}
+
+.game_presetation{
+    width: 60%;
+    font-size: 1vw;
+}
+
+.game_presetation p{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.game_presetation img{
+    display: block;
+    height: 5vw;
+    margin: auto;
+    margin-top: 0.5vw;
+    margin-bottom: 2vw;
+}
+
+.game iframe{
+    width: 40%;
+    height: auto;
+}
+
+#hellvolution .game_presetation{
+    background: url("images/hellvolution.png");
+    background-size: cover;
+    background-position: 0vw -9vw;
+}
+
+#lifetrap .game_presetation{
+    background: url("images/lifetrap.png");
+    background-size: cover;
+    background-position: 0vw -4.5vw;
+}
+
+#two_worlds .game_presetation{
+    background: url("images/two_worlds.png");
+    background-size: cover;
+    background-position: 0vw -4vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .presentation{
+        display: grid;
+    }
+
+    .presentation_text{
+        width: auto;
+        box-shadow: none;
+
+        text-align: center;
+        font-size:4.5vw;
+    }
+
+    .character_container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .character_container img{
+        height: 75vw;
+        margin: 5% 0 0 0;
+    }
+
+    .choice{
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+        gap: 8vw;
+    }
+    
+    .choice button{
+        height: 12vw;
+        width: 38vw;
+    
+        border-radius: 6vw;
+
+        font-size: 4vw;
+    }
+
+    .frenchdev{
+        font-size: 3vw;
+    }
+    
+    .frenchdev img{
+        height: 20vw;
+        padding-left: 1vw;
+    }
+}
