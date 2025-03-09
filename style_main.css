@@ -169,6 +169,8 @@ body{
         margin-left: 10%;
     
         padding-top: 3vw;
+
+        gap: 0;
     }
     
     .presentation_text{
@@ -182,7 +184,7 @@ body{
     
     .presentation_text p{
         font-size:20px;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
     
     .character_container img{
