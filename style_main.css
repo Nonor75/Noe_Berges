@@ -128,6 +128,8 @@ body{
 .game_presetation p{
     margin-left: 1vw;
     margin-right: 1vw;
+
+    text-align: justify;
 }
 
 .game_presetation img{
@@ -206,5 +208,76 @@ body{
     .frenchdev img{
         height: 16vw;
         padding-left: 1vw;
+    }
+
+    .games_container{
+        gap: 15vw;
+    }
+
+    .game{
+        width:100%;
+        height: auto;
+
+        flex-direction: column-reverse;
+        align-items: center;
+
+        gap: 0;
+
+        background-color: black;
+
+        border-radius: 0;
+    }
+
+    .game iframe{
+        width: 90%;
+        aspect-ratio: 16 / 9;
+
+        border: 0.41vw solid white;
+        border-radius: 5vw;
+
+        margin-bottom: 8vw;
+    }
+
+    .game_presetation{
+        width: 100%;
+        height: 300px;
+    }
+
+    .game_presetation p{
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .game_presetation img{
+        width: auto;
+        height: 15vw;
+        max-width: 90%;
+        margin-top: 3vw;
+    }
+
+    #hellvolution .game_presetation img{
+        height: auto;
+    }
+
+    #lifetrap .game_presetation, #hellvolution .game_presetation,  #two_worlds .game_presetation{
+        background: none;
+    }
+
+    #hellvolution{
+        background: url("images/hellvolution.png");
+        background-size: cover;
+        background-position: 0vw -9vw;
+    }
+    
+    #lifetrap{
+        background: url("images/lifetrap.png");
+        background-size: cover;
+        background-position: 0vw -4.5vw;
+    }
+    
+    #two_worlds{
+        background: url("images/two_worlds.png");
+        background-size: cover;
+        background-position: 0vw -4vw;
     }
 }
