@@ -15,6 +15,10 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 }
 
+a{
+    color: white;
+}
+
 .presentation{
     background: #161616; 
     width: 840px;
@@ -142,6 +146,7 @@ body{
 
 .game_presetation p{
     text-align: justify;
+    line-height: 1.3em;
 }
 
 .game_presetation img{
