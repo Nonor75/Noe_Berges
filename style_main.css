@@ -228,7 +228,7 @@ body{
     .games_container{
         gap: 4vw;
     
-        margin-bottom: 5vw;
+        padding-bottom: 5vw;
     }
     
     .game{
@@ -302,11 +302,14 @@ body{
     .frenchdev{
         font-size: 2.5vw;
         flex-direction: column;
+
+        margin-bottom: 15vw;
     }
     
     .frenchdev img{
         height: 25vw;
         padding: 0;
+
     }
 
     .games_container{
@@ -331,7 +334,7 @@ body{
 
         border-radius: 5vw;
 
-        margin-bottom: 8vw;
+        margin-bottom: 15vw;
     }
 
     .game_presetation{
