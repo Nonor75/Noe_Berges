@@ -10,12 +10,14 @@ body{
 
 .presentation{
     background: #161616; 
-    width: 100%;
+    width: 80%;
+
+    margin-left: 10%;
 
     padding-top: 3vw;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     align-items: center;
 }
@@ -23,7 +25,7 @@ body{
 .presentation_text{
     width: 45%;
 
-    font-size:40px;
+    font-size:35px;
 
     padding-left: 30px;
     padding-right: 30px;
@@ -32,8 +34,8 @@ body{
 }
 
 .presentation_text p{
-    font-size:25px;
-    margin-bottom: 60px;
+    font-size:20px;
+    margin-bottom: 40px;
 }
 
 .presentation_text p{
@@ -41,12 +43,13 @@ body{
 }
 
 .character_container img{
-    height: 35vw;
+    height: 32vw;
     background: linear-gradient(120deg, #000046, #1cb5e0);
     box-shadow: 1.5vw 0.75vw 0vw 0vw #daeaff;
     border-radius: 15% 85% 50% 50% / 50% 50% 50% 50%;
 
     margin-top: 10%;
+    margin-right: 1.5vw;
     margin-bottom: 10%;
 }
 
@@ -125,12 +128,10 @@ body{
 .game_presetation{
     width: 60%;
     font-size: 18px;
+    margin-left: 30px;
 }
 
 .game_presetation p{
-    margin-left: 30px;
-    margin-right: 1vw;
-
     text-align: justify;
 }
 
