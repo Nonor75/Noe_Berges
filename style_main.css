@@ -239,6 +239,7 @@ body{
     
     .game_presetation{
         width: 60%;
+        margin-left: 0;
     }
     
     .game_presetation img{
@@ -295,12 +296,12 @@ body{
     }
 
     .frenchdev{
-        font-size: 3vw;
+        font-size: 2.5vw;
         flex-direction: column;
     }
     
     .frenchdev img{
-        height: 40vw;
+        height: 25vw;
         padding: 0;
     }
 
