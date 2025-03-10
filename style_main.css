@@ -258,6 +258,7 @@ a{
     
     .game_presetation{
         width: 60%;
+        margin-left: 30px;
     }
     
     .game_presetation img{
@@ -266,7 +267,7 @@ a{
     }
     
     .game iframe{
-        width: 40%;
+        width: 38%;
         border-radius: 2vw;
     }
 }
