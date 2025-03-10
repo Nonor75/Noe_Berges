@@ -1,5 +1,5 @@
 main{
-    width: 1200px;
+    width: 1250px;
     margin: 0 auto;
     background: #161616; 
     box-shadow: 0px 0px 35px 0px #000000; 
@@ -17,13 +17,14 @@ body{
 
 a{
     color: rgb(210, 76, 109);
+    font-weight: bold;
 }
 
 .presentation{
     background: #161616; 
     width: 1080px;
 
-    margin-left: 60px;
+    margin-left: 85px;
 
     padding-top: 30px;
 
@@ -130,17 +131,21 @@ a{
 }
 
 .game{
-    width: 960px;
+    width: 1080px;
     height: 210px;
 
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
 }
 
 .game_presetation{
-    width: 630px;
+    width: 650px;
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .game_presetation p{
@@ -149,15 +154,15 @@ a{
 }
 
 .game_presetation img{
-    display: block;
+
     height: 60px;
     margin: auto;
     margin-top: 5px;
-    margin-bottom: 20px;
+
 }
 
 .game iframe{
-    width: 420px;
+    width: 374px;
     height: auto;
 
     border-radius: 20px;
@@ -167,7 +172,7 @@ a{
     pointer-events: none;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
     main{
         width: 100%;
     }
@@ -258,7 +263,6 @@ a{
     .game_presetation img{
         height: 5vw;
         margin-top: 0.5vw;
-        margin-bottom: 2vw;
     }
     
     .game iframe{
@@ -351,9 +355,6 @@ a{
 
     .game_presetation{
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin-left: 0;
     }
 
@@ -368,6 +369,8 @@ a{
         height: 15vw;
         max-width: 90%;
         margin-top: 3vw;
+
+        display: block;
     }
 
     #hellvolution .game_presetation img{
