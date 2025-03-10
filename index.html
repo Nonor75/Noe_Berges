@@ -34,8 +34,8 @@
         </section>
 
         <section class="choice">
-            <button onclick="games()">Mes Jeux</button>
-            <button onclick="modelisation()">Modélisation 3D</button>
+            <button onclick="document.getElementById('jeux-videos').scrollIntoView({ behavior: 'smooth' });">Mes Jeux</button>
+            <button onclick="document.getElementById('modelisation').scrollIntoView({ behavior: 'smooth' });">Modélisation 3D</button>
         </section>
 
         <section id="jeux-videos">
@@ -71,21 +71,9 @@
         </section>
 
         <section id="modelisation">
-            <h1>3D</h1>
+
         </section>
     </main>
 </body>
-
-<script>
-    function games() {
-        document.getElementById("jeux-videos").style.display = "block";
-        document.getElementById("modelisation").style.display = "none";
-    }
-
-    function modelisation() {
-        document.getElementById("jeux-videos").style.display = "none";
-        document.getElementById("modelisation").style.display = "block";
-    }
-</script>
 
 </html>
