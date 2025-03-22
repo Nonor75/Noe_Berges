@@ -295,12 +295,14 @@ a{
     }
     
     .game{
-        width: 745px;
+        width: 90%;
         height: 330px;
+
+        gap: 15px;
     }
     
     .game_presetation{
-        width: 440px;
+        width: 100%;
         font-size: 17px;
     }
 
