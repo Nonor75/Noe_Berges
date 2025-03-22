@@ -373,11 +373,14 @@ a{
 
         margin-bottom: 18vw;
     }
+
+    .frenchdev p{
+        font-size: 3vw;
+    }
     
     .frenchdev img{
         height: 25vw;
         padding: 0;
-
     }
 
     .games_container{
