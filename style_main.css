@@ -1,5 +1,5 @@
 main{
-    width: 1250px;
+    width: 1400px;
     margin: 0 auto;
     background: #161616; 
     box-shadow: 0px 0px 35px 0px #000000; 
@@ -15,50 +15,49 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 }
 
+.mobile{
+    display: none;
+}
+
 a{
     color: rgb(210, 76, 109);
     font-weight: bold;
 }
 
 .presentation{
-    background: #161616; 
-    width: 1080px;
-
-    margin-left: 85px;
-
+    width: 100%;
+    margin: 0;
     padding-top: 30px;
-
-    display: flex;
     
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    gap: 135px;
 
     align-items: center;
 }
 
-.presentation_text h1{
-    font-size: 48px;
-}
-
 .presentation_text{
-    width: 500px;
-
+    width: 550px;
+    
     padding-left: 30px;
     padding-right: 25px;
+    
+    box-shadow: 4px 4px 0vw 0vw #daeaff;
+}
 
-    box-shadow: 2px 2px 0vw 0vw #daeaff;
+.presentation_text h1{
+    font-size: 52px;
 }
 
 .presentation_text p{
-    font-size:23px;
+    font-size:25px;
     margin-bottom: 40px;
-}
 
-.presentation_text p{
     color: gray;
 }
 
 .character_container img{
-    height: 400px;
+    height: 430px;
     background: linear-gradient(120deg, #000069, #1dc0ed);
     box-shadow: 15px 7.5px 0px 0px #daeaff;
     border-radius: 15% 85% 50% 50% / 50% 50% 50% 50%;
@@ -74,24 +73,24 @@ a{
     align-items: center;
     gap: 150px;
 
-    height: 80px;
+    height: 85px;
 
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .choice button{
-    height: 70px;
-    width: 230px;
+    height: 75px;
+    width: 240px;
 
-    border-radius: 35px;
+    border-radius: 40px;
     background-color: transparent;
-    border: 2.5px solid white;
+    border: 3px solid white;
 
     color: white;
-    font-size: 23px;
+    font-size: 24px;
 
-    box-shadow: 0px 0px 15px 0px #1d5399;
+    box-shadow: 0px 0px 25px 0px #1d5399;
 }
 
 .choice button:hover{
@@ -101,9 +100,9 @@ a{
 }
 
 .frenchdev{
-    font-size: 18px;
+    font-size: 19px;
 
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 
     display: flex;
     flex-direction: column;
@@ -111,9 +110,17 @@ a{
     align-items: center;
 }
 
+.frenchdev h1{
+    margin-bottom: 0;
+}
+
+.frenchdev p{
+    margin-top: 5px;
+    color: gray;
+}
+
 .frenchdev img{
-    height: 130px;
-    padding-left: 10px;
+    height: 135px;
 }
 
 .games_container{
@@ -121,21 +128,21 @@ a{
     flex-direction: column;
     align-items: center;
 
-    gap: 40px;
+    gap: 55px;
 
     padding-bottom: 50px;
 }
 
 .game{
-    width: 1080px;
-    height: 210px;
+    width: 1190px;
+    height: 300px;
 
     display: flex;
     justify-content:space-between;
 }
 
 .game_presetation{
-    width: 650px;
+    width: 730px;
     font-size: 20px;
     margin-left: 0px;
 
@@ -147,19 +154,24 @@ a{
 .game_presetation p{
     text-align: justify;
     line-height: 1.3em;
+    width: 100%;
+
+    margin: 0;
 }
 
 .game_presetation img{
 
-    height: 60px;
+    height: 65px;
     margin: auto;
-    margin-top: 5px;
-
+    margin-bottom: 20px;
 }
 
 .game iframe{
-    width: 374px;
-    height: auto;
+
+    margin-top: auto;
+
+    width: 410px;
+    height: 230.6px;
 
     border-radius: 20px;
 
@@ -167,109 +179,149 @@ a{
 
     pointer-events: none;
 }
-
-@media only screen and (max-width: 1250px) {
-    main{
+@media only screen and (max-width: 1420px) {
+    main, body{
         width: 100%;
     }
-    
-    .presentation{
-        width: 80%;
-    
-        margin-left: 10%;
-    
-        padding-top: 3vw;
-    }
-    
+}
+
+@media only screen and (max-width: 1300px) {
     .presentation_text{
-        width: 45%;
-    
-        font-size:35px;
-    
+        width: 432px;
+        
         padding-left: 20px;
         padding-right: 20px;
+        
+        box-shadow: 4px 4px 0vw 0vw #daeaff;
     }
-
+    
     .presentation_text h1{
-        font-size: 41px;
+        font-size: 46px;
     }
     
     .presentation_text p{
-        font-size:19px;
-        margin-bottom: 40px;
+        font-size:22px;
+        margin-bottom: 30px;
     }
-    
+
     .character_container img{
-        height: 30vw;
-        box-shadow: 1.5vw 0.75vw 0vw 0vw #daeaff;
-    
-        margin-top: 10%;
-        margin-right: 1.5vw;
-        margin-bottom: 10%;
+        height: 360px;
+        box-shadow: 12px 5.5px 0px 0px #daeaff;
     }
-    
+
     .choice{
-        gap: 15vw;
-    
-        width: 100%;
-        height: 8vw;
-    
-        padding-top: 2vw;
-        padding-bottom: 2vw;
+        gap: 120px;
     }
     
     .choice button{
-        height: 65px;
-        width: 215px;
+        height: 70px;
+        width: 230px;
     
-        border: 0.25vw solid white;
-
-        font-size: 20px;
-    
-        box-shadow: 0px 0px 1.5vw 0vw #1d5399;
+        font-size: 22px;
     }
     
     .frenchdev{
-        margin-bottom: 5vw;
-        font-size: 17px;
+        font-size: 18px;
     }
     
     .frenchdev img{
-        padding-left: 1vw;
-        height: 100px;
+        height: 125px;
     }
     
     .games_container{
-        gap: 4vw;
+        gap: 55px;
     
-        padding-bottom: 5vw;
+        padding-bottom: 50px;
     }
     
     .game{
-        width: 80%;
-        height: 16.875vw;
-    
-        gap: 0.2vw;
+        width: 975px;
+        height: 330px;
     }
     
     .game_presetation{
-        width: 60%;
-        margin-left: 30px;
-    }
-    
-    .game_presetation img{
-        height: 5vw;
-        margin-top: 0.5vw;
+        width: 570px;
+        font-size: 18px;
+
+        justify-content: space-evenly;
     }
     
     .game iframe{
-        width: 38%;
-        border-radius: 2vw;
+        width: 380px;
+        height: 213.8px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .presentation{
+        gap: 30px;
+    }
+
+    .presentation_text{
+        width: 432px;
+        
+        padding-left: 20px;
+        padding-right: 0px;
+        
+        box-shadow: 4px 4px 0vw 0vw #daeaff;
+    }
+    
+    .presentation_text h1{
+        font-size: 42px;
+    }
+    
+    .presentation_text p{
+        font-size:20px;
+        margin-bottom: 30px;
+    }
+
+    .character_container img{
+        height: 310px;
+    }
+    
+    .frenchdev{
+        font-size: 17.5px;
+    }
+    
+    .frenchdev img{
+        height: 110px;
+    }
+    
+    .games_container{
+        gap: 55px;
+    
+        padding-bottom: 50px;
+    }
+    
+    .game{
+        width: 745px;
+        height: 330px;
+    }
+    
+    .game_presetation{
+        width: 440px;
+        font-size: 17px;
+    }
+
+    .game_presetation img{
+        height: 55px;
+    }
+    
+    .game iframe{
+        width: 280px;
+        height: 157.5px;
+
+        margin: auto;
     }
 }
 
 
 @media only screen and (max-width: 768px) {
+    .mobile{
+        display: block;
+    }
+    
     .presentation{
         display: grid;
         gap: 0;
@@ -295,6 +347,7 @@ a{
     .character_container img{
         height: 75vw;
         margin: 5% 0 0 0;
+        box-shadow: 15px 7px 0px 0px #daeaff;
     }
 
     .choice{
@@ -342,8 +395,8 @@ a{
     }
 
     .game iframe{
-        width: 90%;
-        aspect-ratio: 16 / 9;
+        width: 88vw;
+        height: 50vw;
 
         border-radius: 5vw;
 
@@ -359,6 +412,10 @@ a{
         margin-left: 3vw;
         margin-right: 3vw;
         width: 90%;
+    }
+
+    .game_presetation ul{
+        width: 85%;
     }
 
     .game_presetation img{
