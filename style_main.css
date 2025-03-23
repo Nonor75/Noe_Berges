@@ -31,7 +31,7 @@ a{
     
     display: flex;
     justify-content: center;
-    gap: 135px;
+    gap: 140px;
 
     align-items: center;
 }
@@ -123,32 +123,93 @@ a{
     height: 135px;
 }
 
-.games_container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+.games-display{
+    width: 1200px;
 
-    gap: 55px;
+    display: flex;
+    margin: auto;
 
     padding-bottom: 50px;
 }
 
-.game{
-    width: 1190px;
-    height: 300px;
+.games-button{
+    height: 410px;
+    width: 60px;
 
+    padding: 0;
+    
+    border: none;
+    outline: 2px solid white;
+
+    background-color: #3f4965;
+}
+
+.games-button:hover{
+    background-color: #4f6194;
+    transition: 0.25s;
+}
+
+.games-button:active{
+    background-color: #3f4965;
+    transition: 0.25s;
+}
+
+.games-button img{
+    height: 30px;
+}
+
+#left{
+    border-radius: 30px 0 0 30px;
+}
+
+#right{
+    border-radius: 0px 30px 30px 0px;
+}
+
+#right img{
+    rotate: 180deg;
+}
+
+.games_container{
+    height: 410px;
+    width: 1080px;
+
+    overflow: hidden;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #3d4b6800;
+    outline: 2px solid white;
+}
+
+.game{
     display: flex;
     justify-content:space-between;
+
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+
+    margin-top: 20px;
+
+    width: 1020px;
+    height: 350px;
+}
+
+.game.active{
+    opacity: 1;
 }
 
 .game_presetation{
-    width: 730px;
+    width: 590px;
     font-size: 20px;
     margin-left: 0px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .game_presetation p{
@@ -187,7 +248,7 @@ a{
 
 @media only screen and (max-width: 1300px) {
     .presentation_text{
-        width: 432px;
+        width: 435px;
         
         padding-left: 20px;
         padding-right: 20px;
@@ -227,39 +288,52 @@ a{
     .frenchdev img{
         height: 125px;
     }
+
+    .games-display{
+        width: 990px;
+    }
+
+    .games-button{
+        width: 50px;
+    }
     
     .games_container{
+        width: 890px;
         gap: 55px;
-    
-        padding-bottom: 50px;
     }
     
     .game{
-        width: 975px;
+        margin-top: 35px;
+
+        width: 850px;
         height: 330px;
     }
     
     .game_presetation{
-        width: 570px;
+        width: 460px;
         font-size: 18px;
 
         justify-content: space-evenly;
     }
     
     .game iframe{
-        width: 380px;
-        height: 213.8px;
+        width: 370px;
+        height: 208.1px;
+    }
+
+    #hellvolution img{
+        width: 400px;
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 1050px) {
-
     .presentation{
         gap: 30px;
     }
 
     .presentation_text{
-        width: 432px;
+        width: 435px;
         
         padding-left: 20px;
         padding-right: 0px;
@@ -287,23 +361,35 @@ a{
     .frenchdev img{
         height: 110px;
     }
+
+    .games-display{
+        width: 810px;
+    }
+
+    .games-button{
+        height: 680px;
+    }
     
-    .games_container{
-        gap: 55px;
-    
-        padding-bottom: 50px;
+    .games_container{    
+        width: 710px;
+        height: 680px;
     }
     
     .game{
         width: 90%;
-        height: 330px;
+        height: 680px;
 
         gap: 15px;
+
+        flex-direction: column-reverse;
+        align-items: center;
     }
     
     .game_presetation{
         width: 100%;
         font-size: 17px;
+
+        line-height: 1em;
     }
 
     .game_presetation img{
@@ -311,10 +397,20 @@ a{
     }
     
     .game iframe{
-        width: 280px;
-        height: 157.5px;
+        width: 580px;
+        height: 326.3px;
 
         margin: auto;
+    }
+}
+
+@media only screen and (max-width: 855px) {
+    .games-display{
+        width: 750px;
+    }
+
+    .games_container{    
+        width: 650px;
     }
 }
 
@@ -339,6 +435,10 @@ a{
 
     .presentation_text p{
         margin-bottom: 0;
+    }
+
+    .games-display{
+        width: 90%;
     }
 
     .character_container{
@@ -382,14 +482,44 @@ a{
         height: 25vw;
         padding: 0;
     }
+    
+    .games-display{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .games-button{
+        width: 100%;
+        height: 60px;
+    }
+
+    #left{
+        border-radius: 30px 30px 0 0;
+    }
+
+    #left img{
+        rotate: 90deg;
+    }
+
+    #right{
+        border-radius: 0 0 30px 30px;
+    }
+
+    #right img{
+        rotate: 270deg;
+    }
 
     .games_container{
+        width:100%;
         gap: 0;
+        height: 760px;
     }
 
     .game{
         width:100%;
         height: auto;
+
+        margin: auto;
 
         flex-direction: column-reverse;
         align-items: center;
@@ -400,12 +530,14 @@ a{
     }
 
     .game iframe{
-        width: 88vw;
-        height: 50vw;
+        width: 90%;
+        height: auto;
 
         border-radius: 5vw;
 
-        margin-bottom: 18vw;
+        margin-bottom: 5vw;
+
+        aspect-ratio: 16 / 9;
     }
 
     .game_presetation{
@@ -433,6 +565,7 @@ a{
     }
 
     #hellvolution .game_presetation img{
+        width: 80vw;
         height: auto;
     }
 }
