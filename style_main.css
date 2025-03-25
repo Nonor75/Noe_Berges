@@ -12,7 +12,9 @@ body{
     margin: 0;
 
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: roboto;
+
+    letter-spacing: 1px;
 }
 
 .mobile{
@@ -141,17 +143,22 @@ a{
     border: none;
     outline: 2px solid white;
 
-    background-color: #3f4965;
+    background-color: #a0a0a000;
 }
 
 .games-button:hover{
-    background-color: #4f6194;
+    background-color: #ffffff15;
     transition: 0.25s;
 }
 
 .games-button:active{
-    background-color: #3f4965;
+    background-color: #ffffff;
     transition: 0.25s;
+}
+
+.games-button:active img{
+    transition: 0.25s;
+    filter: brightness(0.15);
 }
 
 .games-button img{
@@ -236,7 +243,7 @@ a{
 
     border-radius: 20px;
 
-    box-shadow: 0px 0px 15px 4px #000000;
+    box-shadow: -4px 4px 17px 6px #000000;
 
     pointer-events: none;
 }
