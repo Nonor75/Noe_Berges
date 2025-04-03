@@ -14,7 +14,7 @@ body{
     color: white;
     font-family: roboto;
 
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
 }
 
 .mobile{
@@ -131,11 +131,11 @@ a{
     display: flex;
     margin: auto;
 
-    padding-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .games-button{
-    height: 410px;
+    height: 430px;
     width: 60px;
 
     padding: 0;
@@ -178,7 +178,7 @@ a{
 }
 
 .games_container{
-    height: 410px;
+    height: 430px;
     width: 1080px;
 
     overflow: hidden;
@@ -187,7 +187,6 @@ a{
     flex-direction: column;
     align-items: center;
 
-    background-color: #3d4b6800;
     outline: 2px solid white;
 }
 
@@ -198,7 +197,7 @@ a{
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
 
-    margin-top: 20px;
+    margin-top: 30px;
 
     width: 1020px;
     height: 350px;
@@ -247,6 +246,85 @@ a{
 
     pointer-events: none;
 }
+
+.model_pres{
+    width: 1200px;
+    height: 400px;
+
+    margin: auto;
+    margin-bottom: 40px;
+
+    border-radius: 30px;
+
+    background-image: url("images/making_of.png");
+    background-size: cover;
+    background-position: 0px -150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.model_pres h1{
+    margin-top: 125px;
+    margin-bottom: 40px;
+    font-size: 90px;
+}
+
+.model_pres p{
+    margin: 0;
+    font-size: 25px;
+}
+
+.models{
+    width:1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 590px 590px ;
+    grid-template-rows: 380px 380px;
+    gap: 0px 20px;
+
+    align-items: center;
+}
+
+.models div{
+    transition: ease-in-out 0.25s;
+    width: 100%;
+    height: 300px;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.models div:hover{
+    height: 400px;
+}
+
+#model1{
+    background-image: url("images/animal.png");
+}
+
+#model1:hover{
+    background-image: url("images/animal.gif");
+}
+
+#model2{
+    background-image: url("images/baleine.png");
+}
+
+#model3{
+    background-image: url("images/monster.png");
+}
+
+#model3:hover{
+    background-image: url("images/monster.gif");
+}
+
+#model4{
+    background-image: url("images/low_poly.png");
+}
+
 @media only screen and (max-width: 1420px) {
     main, body{
         width: 100%;
@@ -298,6 +376,8 @@ a{
 
     .games-display{
         width: 990px;
+
+        margin-bottom: 80px;
     }
 
     .games-button{
@@ -331,6 +411,31 @@ a{
     #hellvolution img{
         width: 400px;
         height: auto;
+    }
+
+    .model_pres{
+        width: 990px;
+        height: 350px;
+        background-position: 0 -130px;
+    }
+    
+    .model_pres h1{
+        margin-top: 95px;
+    }
+    
+    .models{
+        width:990px;
+
+        grid-template-columns: 485px 485px ;
+        grid-template-rows: 350px 350px;
+    }
+    
+    .models div{
+        height: 270px;
+    }
+    
+    .models div:hover{
+        height: 360px;
     }
 }
 
@@ -409,6 +514,39 @@ a{
 
         margin: auto;
     }
+
+    .model_pres{
+        width: 810px;
+        height: 320px;
+
+        background-position: 0 -90px;
+    }
+    
+    .model_pres h1{
+        margin-top: 105px;
+        margin-bottom: 25px;
+        font-size: 70px;
+    }
+
+    .model_pres p{
+        font-size: 21px;
+    }
+    
+    .models{
+        width:810px;
+    
+        grid-template-columns: 398px 398px ;
+        grid-template-rows: 300px 300px;
+        gap: 0px 14px;
+    }
+    
+    .models div{
+        height: 240px;
+    }
+    
+    .models div:hover{
+        height: 300px;
+    }
 }
 
 @media only screen and (max-width: 855px) {
@@ -418,6 +556,23 @@ a{
 
     .games_container{    
         width: 650px;
+    }
+
+    .model_pres{
+        width: 740px;
+        height: 300px;
+    }
+
+    .model_pres h1{
+        margin-top: 90px;
+    }
+    
+    .models{
+        width:740px;
+    
+        grid-template-columns: 363px 363px ;
+        grid-template-rows: 300px 300px;
+        gap: 0px 14px;
     }
 }
 
@@ -574,5 +729,37 @@ a{
     #hellvolution .game_presetation img{
         width: 80vw;
         height: auto;
+    }
+
+    .model_pres{
+        width: 90%;
+        height: 40vw;
+
+        background-position: 0 -10vw;
+    }
+    
+    .model_pres h1{
+        margin-top:15vw;
+        margin-bottom: 10px;
+        font-size: 48px;
+    }
+
+    .model_pres p{
+        font-size: 16px;
+    }
+    
+    .models{
+        width: 90%;
+    
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+    
+    .models div{
+        width: 100%;
+    }
+    
+    .models div:hover{
+        height: 320px;
     }
 }
