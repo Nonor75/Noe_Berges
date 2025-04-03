@@ -733,7 +733,7 @@ a{
 
     .model_pres{
         width: 90%;
-        height: 40vw;
+        height: 44vw;
 
         background-position: 0 -10vw;
     }
@@ -741,7 +741,7 @@ a{
     .model_pres h1{
         margin-top:15vw;
         margin-bottom: 10px;
-        font-size: 48px;
+        font-size: 45px;
     }
 
     .model_pres p{
