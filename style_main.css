@@ -169,6 +169,10 @@ a{
     border-radius: 30px 0 0 30px;
 }
 
+#left2{
+    display: none;
+}
+
 #right{
     border-radius: 0px 30px 30px 0px;
 }
@@ -476,6 +480,9 @@ a{
 
     .games-display{
         width: 810px;
+
+        display: flex;
+        flex-direction: column;
     }
 
     .games-button{
@@ -483,7 +490,7 @@ a{
     }
     
     .games_container{    
-        width: 710px;
+        width: 810px;
         height: 680px;
     }
     
@@ -513,6 +520,28 @@ a{
         height: 326.3px;
 
         margin: auto;
+    }
+
+    .buttons{
+        display: flex;
+    }
+
+    .games-button{
+        height: 70px;
+        width: 405px;
+    }
+
+    #left{
+        display: none;
+    }
+
+    #left2{
+        display: block;
+        border-radius: 0 0 0 30px;
+    }
+
+    #right{
+        border-radius: 0 0 30px 0;
     }
 
     .model_pres{
@@ -555,7 +584,12 @@ a{
     }
 
     .games_container{    
-        width: 650px;
+        width: 750px;
+    }
+
+    .games-button{
+        height: 70px;
+        width: 375px;
     }
 
     .model_pres{
@@ -646,35 +680,14 @@ a{
     }
     
     .games-display{
-        flex-direction: column;
+        flex-direction: rox;
         height: auto;
-    }
-
-    .games-button{
-        width: 100%;
-        height: 60px;
-    }
-
-    #left{
-        border-radius: 30px 30px 0 0;
-    }
-
-    #left img{
-        rotate: 90deg;
-    }
-
-    #right{
-        border-radius: 0 0 30px 30px;
-    }
-
-    #right img{
-        rotate: 270deg;
     }
 
     .games_container{
         width:100%;
+        height: auto;
         gap: 0;
-        height: 760px;
     }
 
     .game{
@@ -700,6 +713,8 @@ a{
         margin-bottom: 5vw;
 
         aspect-ratio: 16 / 9;
+
+        display: block;
     }
 
     .game_presetation{
