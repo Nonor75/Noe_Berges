@@ -633,6 +633,9 @@ a{
 
     .nav{
         height: 75px;
+
+        padding-left: 0;
+        justify-content: center;
     }
 
     .nav p{
@@ -649,6 +652,8 @@ a{
     .presentation_text{
         width: auto;
         box-shadow: none;
+
+        padding: 0;
 
         text-align: center;
         font-size:4.5vw;
@@ -780,8 +785,11 @@ a{
     .models{
         width: 90%;
     
-        grid-template-columns: 100%;
-        grid-template-rows: 300px 300px 300px 300px;
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 20px;
     }
     
     .models div{
