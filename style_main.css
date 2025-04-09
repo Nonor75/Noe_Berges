@@ -26,6 +26,40 @@ a{
     font-weight: bold;
 }
 
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: #161616; 
+
+    box-shadow: 0px 1px 0px 0px  white ;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    height: 85px;
+    padding-left: 100px;
+}
+
+.nav p{
+    transition: 0.1s;
+
+    font-size: 19px;
+
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.nav p:hover{
+    text-underline-offset: 6px;
+}
+
+.nav p:active{
+    color: rgb(210, 76, 109);
+}
+
 .presentation{
     width: 100%;
     margin: 0;
@@ -67,38 +101,6 @@ a{
     margin-top: 50px;
     margin-right: 15px;
     margin-bottom: 40px;
-}
-
-.choice{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
-
-    height: 85px;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.choice button{
-    height: 75px;
-    width: 240px;
-
-    border-radius: 40px;
-    background-color: transparent;
-    border: 3px solid white;
-
-    color: white;
-    font-size: 24px;
-
-    box-shadow: 0px 0px 25px 0px #1d5399;
-}
-
-.choice button:hover{
-    color: #161616;
-    background-color: white;
-    transition: 0.25s;
 }
 
 .frenchdev{
@@ -199,7 +201,7 @@ a{
     justify-content:space-between;
 
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
 
     margin-top: 30px;
 
@@ -253,7 +255,7 @@ a{
 
 .model_pres{
     width: 1200px;
-    height: 400px;
+    height: 260px;
 
     margin: auto;
     margin-bottom: 40px;
@@ -262,22 +264,23 @@ a{
 
     background-image: url("images/making_of.png");
     background-size: cover;
-    background-position: 0px -150px;
+    background-position: 0 -100px;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .model_pres h1{
-    margin-top: 125px;
-    margin-bottom: 40px;
-    font-size: 90px;
+    margin-left: 400px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 75px;
 }
 
 .model_pres p{
     margin: 0;
-    font-size: 25px;
+    margin-left: 400px;
+    font-size: 22px;
 }
 
 .models{
@@ -359,17 +362,6 @@ a{
         box-shadow: 12px 5.5px 0px 0px #daeaff;
     }
 
-    .choice{
-        gap: 120px;
-    }
-    
-    .choice button{
-        height: 70px;
-        width: 230px;
-    
-        font-size: 22px;
-    }
-    
     .frenchdev{
         font-size: 18px;
     }
@@ -419,12 +411,18 @@ a{
 
     .model_pres{
         width: 990px;
-        height: 350px;
-        background-position: 0 -130px;
+        height: 240px;
+        background-position: 0 -65px;
     }
     
     .model_pres h1{
-        margin-top: 95px;
+        margin-top: 55px;
+
+        font-size: 65px;
+    }
+
+    .model_pres p{
+        font-size: 20px;
     }
     
     .models{
@@ -491,12 +489,14 @@ a{
     
     .games_container{    
         width: 810px;
-        height: 680px;
+        height: 700px;
     }
     
     .game{
-        width: 90%;
+        width: 92%;
         height: 680px;
+
+        margin-bottom: 20px;
 
         gap: 15px;
 
@@ -512,7 +512,12 @@ a{
     }
 
     .game_presetation img{
-        height: 55px;
+        height: 85px;
+    }
+
+    #hellvolution img{
+        width: 490px;
+        height: auto;
     }
     
     .game iframe{
@@ -546,19 +551,21 @@ a{
 
     .model_pres{
         width: 810px;
-        height: 320px;
+        height: 240px;
 
-        background-position: 0 -90px;
+        background-position: 0 -45px;
     }
     
     .model_pres h1{
-        margin-top: 105px;
+        margin-left: 330px;
+        margin-top: 65px;
         margin-bottom: 25px;
-        font-size: 70px;
+        font-size: 50px;
     }
 
     .model_pres p{
-        font-size: 21px;
+        margin-left: 330px;
+        font-size: 19px;
     }
     
     .models{
@@ -580,11 +587,11 @@ a{
 
 @media only screen and (max-width: 855px) {
     .games-display{
-        width: 750px;
+        width: 740px;
     }
 
     .games_container{    
-        width: 750px;
+        width: 740px;
     }
 
     .games-button{
@@ -594,11 +601,19 @@ a{
 
     .model_pres{
         width: 740px;
-        height: 300px;
+        height: 240px;
+        
+        background-position: 0 -20px;
     }
 
     .model_pres h1{
-        margin-top: 90px;
+        margin-left: 270px;
+        margin-top: 70px;
+    }
+
+    .model_pres p{
+        margin-left: 270px;
+        font-size: 18px;
     }
     
     .models{
@@ -615,10 +630,20 @@ a{
     .mobile{
         display: block;
     }
+
+    .nav{
+        height: 75px;
+    }
+
+    .nav p{
+        font-size: 17px;
+    }
     
     .presentation{
         display: grid;
         gap: 0;
+
+        margin-bottom: 65px;
     }
 
     .presentation_text{
@@ -635,6 +660,7 @@ a{
 
     .games-display{
         width: 90%;
+        margin-bottom: 55px;
     }
 
     .character_container{
@@ -648,26 +674,11 @@ a{
         box-shadow: 15px 7px 0px 0px #daeaff;
     }
 
-    .choice{
-        padding-top: 10vw;
-        padding-bottom: 10vw;
-        gap: 8vw;
-    }
-    
-    .choice button{
-        height: 12vw;
-        width: 38vw;
-    
-        border-radius: 6vw;
-
-        font-size: 4vw;
-    }
-
     .frenchdev{
         font-size: 2.5vw;
         flex-direction: column;
 
-        margin-bottom: 18vw;
+        margin-bottom: 10vw;
     }
 
     .frenchdev p{
@@ -748,19 +759,22 @@ a{
 
     .model_pres{
         width: 90%;
-        height: 44vw;
+        height: 38vw;
 
-        background-position: 0 -10vw;
+        background-position: 0 0vw;
     }
     
     .model_pres h1{
+        margin-left: 25vw;
+
         margin-top:15vw;
         margin-bottom: 10px;
-        font-size: 45px;
+        font-size: 42px;
     }
 
     .model_pres p{
-        font-size: 16px;
+        margin-left: 25vw;  
+        font-size: 15px;
     }
     
     .models{
@@ -776,5 +790,22 @@ a{
     
     .models div:hover{
         height: 320px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .model_pres{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .model_pres h1{
+
+        margin-top: 0px;
+        margin-left: 0;
+    }
+
+    .model_pres p{
+        margin-left: 0;  
     }
 }

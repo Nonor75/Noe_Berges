@@ -24,7 +24,13 @@
 </head>
 
 <body>
+    
     <main>
+        <section class="nav">
+            <p onclick="scrollToSection('jeux-videos')">Mes Jeux</p>
+            <p onclick="scrollToSection('modelisation')">Modélisation 3D</p>
+        </section>
+
         <section class="presentation">
             <div class="presentation_text">
                 <h1>Bonjour, <br> je suis Noé Berges</h1>
@@ -33,11 +39,6 @@
             <div class="character_container">
                 <img src="images/3D_character.png">
             </div>
-        </section>
-
-        <section class="choice">
-            <button onclick="document.getElementById('jeux-videos').scrollIntoView({ behavior: 'smooth' });">Mes Jeux</button>
-            <button onclick="document.getElementById('modelisation').scrollIntoView({ behavior: 'smooth' });">Modélisation 3D</button>
         </section>
 
         <section id="jeux-videos">
@@ -109,6 +110,7 @@
         </section>
 
         <section id="modelisation">
+            <br>
             <div class="model_pres">
                 <h1>Modélisation 3D</h1>
                 <p>Voici quelques modèles 3D que j'ai réalisé</p>
@@ -165,6 +167,15 @@
                     games[current_game].classList.add("active");
                 }, 10);
             }, 200);
+        }
+
+        function scrollToSection(element_id)
+        {
+            const element = document.getElementById(element_id);
+            const yOffset = -85; 
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+            window.scrollTo({ top: y, behavior: 'smooth' });
         }
     </script>
 </body>
