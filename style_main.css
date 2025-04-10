@@ -82,11 +82,11 @@ a{
 }
 
 .presentation_text h1{
-    font-size: 52px;
+    font-size: 56px;
 }
 
 .presentation_text p{
-    font-size:25px;
+    font-size:26px;
     margin-bottom: 40px;
 
     color: gray;
@@ -104,7 +104,7 @@ a{
 }
 
 .frenchdev{
-    font-size: 19px;
+    font-size: 21px;
 
     margin-bottom: 60px;
 
@@ -289,7 +289,7 @@ a{
 
     display: grid;
     grid-template-columns: 590px 590px ;
-    grid-template-rows: 380px 380px;
+    grid-template-rows: 370px 370px;
     gap: 0px 20px;
 
     align-items: center;
@@ -298,14 +298,14 @@ a{
 .models div{
     transition: ease-in-out 0.25s;
     width: 100%;
-    height: 300px;
+    height: 310px;
 
     background-position: center;
     background-size: cover;
 }
 
 .models div:hover{
-    height: 400px;
+    height: 390px;
 }
 
 #model1{
@@ -339,8 +339,12 @@ a{
 }
 
 @media only screen and (max-width: 1300px) {
+    .presentation{
+        gap: 120px;
+    }
+
     .presentation_text{
-        width: 435px;
+        width: 455px;
         
         padding-left: 20px;
         padding-right: 20px;
@@ -349,11 +353,11 @@ a{
     }
     
     .presentation_text h1{
-        font-size: 46px;
+        font-size: 50px;
     }
     
     .presentation_text p{
-        font-size:22px;
+        font-size:23px;
         margin-bottom: 30px;
     }
 
@@ -363,7 +367,7 @@ a{
     }
 
     .frenchdev{
-        font-size: 18px;
+        font-size: 19px;
     }
     
     .frenchdev img{
@@ -429,7 +433,7 @@ a{
         width:990px;
 
         grid-template-columns: 485px 485px ;
-        grid-template-rows: 350px 350px;
+        grid-template-rows: 340px 340px;
     }
     
     .models div{
@@ -572,7 +576,7 @@ a{
         width:810px;
     
         grid-template-columns: 398px 398px ;
-        grid-template-rows: 300px 300px;
+        grid-template-rows: 290px 290px;
         gap: 0px 14px;
     }
     
@@ -620,7 +624,6 @@ a{
         width:740px;
     
         grid-template-columns: 363px 363px ;
-        grid-template-rows: 300px 300px;
         gap: 0px 14px;
     }
 }
@@ -656,10 +659,15 @@ a{
         padding: 0;
 
         text-align: center;
-        font-size:4.5vw;
+    }
+
+    .presentation_text h1{
+        font-size: 52px;
+        margin-bottom: 10px;
     }
 
     .presentation_text p{
+        font-size:25px;
         margin-bottom: 0;
     }
 
@@ -691,7 +699,7 @@ a{
     }
     
     .frenchdev img{
-        height: 25vw;
+        height: 21vw;
         padding: 0;
     }
     
@@ -793,6 +801,7 @@ a{
     }
     
     .models div{
+        height: 200px;
         width: 100%;
     }
     
@@ -802,6 +811,14 @@ a{
 }
 
 @media only screen and (max-width: 560px) {
+    .presentation_text h1{
+        font-size: 42px;
+    }
+    
+    .presentation_text p{
+        font-size:20px;
+    }
+
     .model_pres{
         align-items: center;
         justify-content: center;
