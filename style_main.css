@@ -744,6 +744,8 @@ a{
     .game_presetation{
         width: 100%;
         margin-left: 0;
+
+        font-size: 16px;
     }
 
     .game_presetation p{
@@ -817,6 +819,10 @@ a{
     
     .presentation_text p{
         font-size:20px;
+    }
+
+    .game_presetation{
+        font-size: 15px;
     }
 
     .model_pres{
