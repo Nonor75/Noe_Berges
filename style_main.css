@@ -493,7 +493,7 @@ a{
     
     .games_container{    
         width: 810px;
-        height: 700px;
+        height: 650px;
     }
     
     .game{
@@ -525,8 +525,8 @@ a{
     }
     
     .game iframe{
-        width: 580px;
-        height: 326.3px;
+        width: 500px;
+        height: 281.25px;
 
         margin: auto;
     }
@@ -729,7 +729,7 @@ a{
     }
 
     .game iframe{
-        width: 90%;
+        width: 80%;
         height: auto;
 
         border-radius: 5vw;
