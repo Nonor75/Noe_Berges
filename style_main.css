@@ -37,16 +37,18 @@ a{
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 60px;
 
     height: 85px;
-    padding-left: 100px;
 }
 
 .nav p{
     transition: 0.1s;
 
     font-size: 19px;
+
+    color: rgb(255, 255, 255);
 
     text-decoration: underline;
     text-underline-offset: 3px;
@@ -83,6 +85,11 @@ a{
 
 .presentation_text h1{
     font-size: 56px;
+}
+
+.presentation_text h1 b{
+    font-weight: 700;
+    color: #ee7e7e;
 }
 
 .presentation_text p{
@@ -636,9 +643,6 @@ a{
 
     .nav{
         height: 75px;
-
-        padding-left: 0;
-        justify-content: center;
     }
 
     .nav p{
@@ -648,6 +652,8 @@ a{
     .presentation{
         display: grid;
         gap: 0;
+
+        padding: 0;
 
         margin-bottom: 65px;
     }
@@ -682,7 +688,7 @@ a{
     }
 
     .character_container img{
-        height: 75vw;
+        height: 65vw;
         margin: 5% 0 0 0;
         box-shadow: 15px 7px 0px 0px #daeaff;
     }
@@ -767,6 +773,10 @@ a{
         display: block;
     }
 
+    .games-button{
+        height: 60px;
+    }
+
     #hellvolution .game_presetation img{
         width: 80vw;
         height: auto;
@@ -823,6 +833,10 @@ a{
 
     .game_presetation{
         font-size: 15px;
+    }
+
+    .games-button{
+        height: 50px;
     }
 
     .model_pres{
