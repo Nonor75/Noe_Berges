@@ -56,6 +56,7 @@ a{
 
 .nav p:hover{
     text-underline-offset: 6px;
+    cursor: pointer;
 }
 
 .nav p:active{
@@ -158,6 +159,8 @@ a{
 .games-button:hover{
     background-color: #ffffff15;
     transition: 0.25s;
+
+    cursor: pointer;
 }
 
 .games-button:active{
@@ -293,12 +296,13 @@ a{
 .models{
     width:1200px;
     margin: auto;
+    padding-bottom: 20px;
 
     display: grid;
     grid-template-columns: 590px 590px ;
     grid-template-rows: 370px 370px;
     gap: 0px 20px;
-
+    
     align-items: center;
 }
 
@@ -597,6 +601,11 @@ a{
 }
 
 @media only screen and (max-width: 855px) {
+    .presentation_text
+    {
+        width: 380px;
+    }
+    
     .games-display{
         width: 740px;
     }
