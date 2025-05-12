@@ -852,6 +852,10 @@ a{
 }
 
 @media only screen and (max-width: 560px) {
+    .frenchdev{
+        font-size: 14px
+    }
+    
     .presentation_text h1{
         font-size: 42px;
     }
