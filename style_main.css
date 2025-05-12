@@ -1,6 +1,8 @@
 body{
     background: #161616; 
 
+    overflow-x: hidden;
+
     padding: 0;
     margin: 0;
 
@@ -261,14 +263,22 @@ a{
 .band{
     width: 2800px;
     height: 190px;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(95, 46, 46);
+
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.774);
 
     z-index: -1;
     position: absolute;
-    transform: translate(10%, 0%);
+    transform: translate(200px, 0%);
     right: 0;
 
     rotate: -25deg;
+}
+
+.band.thin{
+    transform: translate(200px, 200px);
+
+    height: 20px;
 }
 
 .model_pres{
