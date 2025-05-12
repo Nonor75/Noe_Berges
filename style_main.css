@@ -1,8 +1,6 @@
-main{
-    background: #161616; 
-}
-
 body{
+    background: #161616; 
+
     padding: 0;
     margin: 0;
 
@@ -148,11 +146,11 @@ a{
     border: none;
     outline: 2px solid white;
 
-    background-color: #a0a0a000;
+    background: #161616; 
 }
 
 .games-button:hover{
-    background-color: #ffffff15;
+    background-color: #535353;
     transition: 0.25s;
 
     cursor: pointer;
@@ -199,6 +197,8 @@ a{
     align-items: center;
 
     outline: 2px solid white;
+
+    background: #161616; 
 }
 
 .game{
@@ -206,7 +206,7 @@ a{
     justify-content:space-between;
 
     opacity: 0;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 
     margin-top: 30px;
 
@@ -256,6 +256,19 @@ a{
     box-shadow: -4px 4px 17px 6px #000000;
 
     pointer-events: none;
+}
+
+.band{
+    width: 2800px;
+    height: 190px;
+    background-color: rgb(221, 221, 221);
+
+    z-index: -1;
+    position: absolute;
+    transform: translate(10%, 0%);
+    right: 0;
+
+    rotate: -25deg;
 }
 
 .model_pres{
