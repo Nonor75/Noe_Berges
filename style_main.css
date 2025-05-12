@@ -269,7 +269,7 @@ a{
 
     z-index: -1;
     position: absolute;
-    transform: translate(200px, 0%);
+    transform: translate(200px, 0);
     right: 0;
 
     rotate: -25deg;
@@ -361,12 +361,6 @@ a{
     background-image: url("images/low_poly.png");
 }
 
-@media only screen and (max-width: 1420px) {
-    main, body{
-        width: 100%;
-    }
-}
-
 @media only screen and (max-width: 1300px) {
     .presentation{
         gap: 120px;
@@ -440,6 +434,14 @@ a{
     #hellvolution img{
         width: 400px;
         height: auto;
+    }
+
+    .band{
+        transform: translate(200px, 200px);
+    }
+
+    .band.thin{
+        transform: translate(200px, 400px);
     }
 
     .model_pres{
@@ -864,6 +866,14 @@ a{
 
     .games-button{
         height: 50px;
+    }
+
+    .band{
+        transform: translate(200px, 300px);
+    }
+
+    .band.thin{
+        transform: translate(200px, 500px);
     }
 
     .model_pres{
