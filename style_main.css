@@ -1,6 +1,6 @@
 body{
     background: #161616; 
-
+    
     overflow-x: hidden;
 
     padding: 0;
@@ -17,7 +17,7 @@ body{
 }
 
 a{
-    color: rgb(210, 76, 109);
+    color: #ee7e7e;
     font-weight: bold;
 }
 
@@ -55,7 +55,7 @@ a{
 }
 
 .nav p:active{
-    color: rgb(210, 76, 109);
+    color: #ee7e7e;
 }
 
 .presentation{
@@ -76,7 +76,7 @@ a{
     padding-left: 30px;
     padding-right: 25px;
     
-    box-shadow: 4px 4px 0vw 0vw #daeaff;
+    box-shadow: 4px 4px 0vw 0vw #ffffff;
 }
 
 .presentation_text h1{
@@ -98,11 +98,10 @@ a{
 .character_container img{
     height: 430px;
     background: linear-gradient(120deg, #000069, #1dc0ed);
-    box-shadow: 15px 7.5px 0px 0px #daeaff;
+
     border-radius: 15% 85% 50% 50% / 50% 50% 50% 50%;
 
     margin-top: 50px;
-    margin-right: 15px;
     margin-bottom: 40px;
 }
 
@@ -148,24 +147,28 @@ a{
     border: none;
     outline: 2px solid white;
 
+    transition: 0.25s;
+
     background: #161616; 
 }
 
 .games-button:hover{
-    background-color: #535353;
-    transition: 0.25s;
-
+    background-color: #ffffff;
     cursor: pointer;
 }
 
-.games-button:active{
-    background-color: #ffffff;
+.games-button:hover img{
     transition: 0.25s;
+    filter: brightness(0.15);
+}
+
+.games-button:active{
+    background-color: #161616;
 }
 
 .games-button:active img{
     transition: 0.25s;
-    filter: brightness(0.15);
+    filter: brightness(1);
 }
 
 .games-button img{
@@ -258,27 +261,6 @@ a{
     box-shadow: -4px 4px 17px 6px #000000;
 
     pointer-events: none;
-}
-
-.band{
-    width: 2800px;
-    height: 190px;
-    background-color: rgb(95, 46, 46);
-
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.774);
-
-    z-index: -1;
-    position: absolute;
-    transform: translate(200px, 0);
-    right: 0;
-
-    rotate: -25deg;
-}
-
-.band.thin{
-    transform: translate(200px, 200px);
-
-    height: 20px;
 }
 
 .model_pres{
@@ -853,7 +835,7 @@ a{
 
 @media only screen and (max-width: 560px) {
     .frenchdev{
-        font-size: 11px
+        font-size: 10.5px;
     }
     
     .presentation_text h1{
