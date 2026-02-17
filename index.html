@@ -52,6 +52,20 @@
                 <button class="games-button" id="left" onclick="previous()"><img src="images/arrow.png"></button>
 
                 <div class="games_container">
+                    <div class="game" id="loop_express">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9dnkJ1HDm6U?autoplay=1&mute=1&loop=1&playlist=SORuyJmmm6U&controls=0&modestbranding=1&showinfo=0&disablekb=1&fs=0&rel=0" frameborder="0" allow="autoplay; encrypted-media; "></iframe>
+                        
+                        <div class="game_presetation"></a>
+                            <a href="https://french-dev.itch.io/loop-express" target="_blank"><img src="images/loop_express_title.png"></a>
+                            
+                            <p><a href="https://french-dev.itch.io/loop-express" target="_blank">The Loop Express</a> est un jeu créé en <u>4 jours</u> lors de la GMTK game jam 2025. 
+                            <br><br>
+                        	Dans ce jeu d'exploration plateformer, vous devez comprendre comment atteindre le cockpit d'un train coincé dans une boucle temporelle. Pour ce faire, vous devez explorer, chercher des objets et interagir avec les PNJ. 
+							<br><br>
+							Trouvez le bon moment pour espionner une conversation qui pourrait vous donner des indices.
+                            </p>
+                        </div>
+                    </div>
                     <div class="game active" id="hellvolution">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/jaB6YKi_Y0U?autoplay=1&mute=1&loop=1&playlist=jaB6YKi_Y0U&controls=0&modestbranding=1&showinfo=0&disablekb=1&fs=0&rel=0" frameborder="0" allow="autoplay; encrypted-media;"></iframe>
                         
@@ -128,8 +142,9 @@
         const hellvolution = document.getElementById("hellvolution");
         const lifetrap = document.getElementById("lifetrap");
         const two_worlds = document.getElementById("two_worlds");
+		const loop_express = document.getElementById("loop_express");
 
-        const games = [hellvolution, lifetrap, two_worlds];
+        const games = [loop_express, hellvolution, lifetrap, two_worlds];
 
         let current_game = 0;
 
@@ -138,7 +153,7 @@
         function next(){
             current_game += 1;
 
-            if(current_game > 2) current_game = 0;
+            if(current_game > 3) current_game = 0;
 
             showGame();
         }
@@ -146,7 +161,7 @@
         function previous(){
             current_game -= 1;
 
-            if(current_game < 0) current_game = 2;
+            if(current_game < 0) current_game = 3;
 
             showGame();
         }
