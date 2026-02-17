@@ -876,4 +876,31 @@ a{
     .model_pres p{
         margin-left: 0;  
     }
+
+}
+
+
+@media only screen and (max-width: 440px) {
+
+    .frenchdev{
+        font-size: 8px;
+    }
+
+	.model_pres h1{
+
+        font-size: 30px;
+    }
+
+	.model_pres p{
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 350px) {
+
+    .frenchdev{
+        font-size: 7px;
+    }
+
 }
