@@ -368,7 +368,6 @@ a{
 
     .character_container img{
         height: 360px;
-        box-shadow: 12px 5.5px 0px 0px #daeaff;
     }
 
     .frenchdev{
@@ -701,7 +700,6 @@ a{
     .character_container img{
         height: 65vw;
         margin: 5% 0 0 0;
-        box-shadow: 15px 7px 0px 0px #daeaff;
     }
 
     .frenchdev{
@@ -904,3 +902,4 @@ a{
     }
 
 }
+
