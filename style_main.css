@@ -263,6 +263,15 @@ a{
     pointer-events: none;
 }
 
+#loop_express img{
+	width: 600px;
+    height: auto;
+	margin: 0;
+	margin-right: -50px;
+	margin-top: -30px;
+	margin-bottom: -15px;
+}
+
 .model_pres{
     width: 1200px;
     height: 260px;
@@ -417,6 +426,13 @@ a{
         height: auto;
     }
 
+	#loop_express img{
+		width: 520px;
+		margin-right: 0px;
+		margin-top: -35px;
+		margin-bottom: -15px;
+	}
+
     .band{
         transform: translate(200px, 200px);
     }
@@ -527,6 +543,10 @@ a{
         line-height: 1em;
     }
 
+	.game_presetation p{
+        text-align: center;
+    }
+
     .game_presetation img{
         height: 85px;
     }
@@ -535,6 +555,13 @@ a{
         width: 490px;
         height: auto;
     }
+
+	#loop_express img{
+		width: 610px;
+		margin: 0;
+		margin-top: -35px;
+		margin-bottom: -10px;
+	}
     
     .game iframe{
         width: 500px;
@@ -791,6 +818,15 @@ a{
         height: auto;
     }
 
+	#loop_express img{
+		width: 580px;
+		height: auto;
+		margin: 0;
+		margin-left: 29px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
     .model_pres{
         width: 90%;
         height: 38vw;
@@ -902,4 +938,5 @@ a{
     }
 
 }
+
 
